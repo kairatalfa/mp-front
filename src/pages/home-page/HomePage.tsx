@@ -1,3 +1,4 @@
+import { PageWrapper } from "App.styled";
 import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -8,15 +9,11 @@ const HomePage: React.FC = () => {
 			<Helmet>
 				<h1>главная - MW Marketplace</h1>
 			</Helmet>
-			<h1>главная - MW Marketplace</h1>
-			<TestD />
+			<PageWrapper>
+				<h1>главная</h1>
+			</PageWrapper>
 		</div>
 	);
 };
 
 export default HomePage;
-
-const TestD = styled.div`
-	background-color: red;
-	height: 20px;
-`;
